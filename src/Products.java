@@ -1,5 +1,3 @@
-package modulo1.aula3;
-
 import java.util.Scanner;
 
 public class Products {
@@ -18,7 +16,7 @@ public class Products {
         double preco = scanner.nextDouble();
 
         System.out.println("=========== Cadastro realizado com sucesso! ============");
-        System.out.printf("\t O produto cadastrado:  %s, \n cor: %s \n tamanho: %s \n preço: f%\n",produto, cor, tam, preco);
+        System.out.printf("\t O produto cadastrado:  %s, \n cor: %s \n tamanho: %s \n preço: %f\n",produto, cor, tam, preco);
         System.out.println("Deseja continuar cadastrando?");
     }
 
