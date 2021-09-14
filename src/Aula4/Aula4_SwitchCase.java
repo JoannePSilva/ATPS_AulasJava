@@ -9,7 +9,7 @@ public class Aula4_SwitchCase {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("=========== CapFlix============");
-        System.out.println("Escolha o tipo de programação que quer cadastrar  \n 1 - Série  \n 2 - Documentário  \n 3 - Filme \n 0 - Sair");
+        System.out.println("Escolha o tipo de programação que quer cadastrar  \n 1 - Série  \n 2 - Documentário  \n 3 - Filme \n 0 - Sair \n --->");
         int tipo = scanner.nextInt();
 
         switch (tipo) {
@@ -24,8 +24,11 @@ public class Aula4_SwitchCase {
                 System.out.println("Digite o ano da série");
                 Integer ano = scanner.nextInt();
                 System.out.println("Digite a descrição da série");
-                String descricao = scanner.next();
+                String descricao = scanner.nextLine();
+                scanner.nextLine();
                 System.out.println("__________________Cadastro realizado com sucesso!____________________________");
+                System.out.printf("Série: %s | gênero: %s | Ano: %d | descrição: %s", serie, genero, ano, descricao);
+
 
                 break;
             case 2:
