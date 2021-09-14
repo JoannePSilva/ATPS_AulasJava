@@ -1,3 +1,5 @@
+package Aula4;
+
 import java.util.Scanner;
 
 public class Aula4_if_else {
