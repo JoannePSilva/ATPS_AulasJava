@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Exercicio_cadastro {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Cliente> cadastro = new ArrayList<>();
+       // ArrayList<Cliente> cadastro = new ArrayList<>();
 
 
         System.out.println("=========== CADASTRO CAPCLIENT  ============");

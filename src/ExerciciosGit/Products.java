@@ -1,3 +1,5 @@
+package ExerciciosGit;
+
 import java.util.Scanner;
 
 public class Products {
