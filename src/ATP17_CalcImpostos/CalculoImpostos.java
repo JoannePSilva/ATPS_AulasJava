@@ -8,6 +8,10 @@ public class CalculoImpostos {
     private double iof = 0.0038;
     private double ir = 0.075;
 
+    public void cabecalho(){
+        System.out.println("====== C A L C U L A D O R A ====== \n   = = = = = de = = = = =   \n ====== I M P O S T O S ======");
+    }
+
     public double calc_iss(double valor_iss){
         double calcIss = iss * valor_iss;
         return calcIss;

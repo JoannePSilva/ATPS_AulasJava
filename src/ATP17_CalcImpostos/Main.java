@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
         CalculoImpostos calculoImpostos = new CalculoImpostos();
 
+
+        calculoImpostos.cabecalho();
         double iss = calculoImpostos.calc_iss(200);
         double iof = calculoImpostos.calc_iof(150);
         double ir = calculoImpostos.calc_ir(300);
