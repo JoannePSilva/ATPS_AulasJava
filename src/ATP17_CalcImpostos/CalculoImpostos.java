@@ -1,13 +1,12 @@
 package ATP17_CalcImpostos;
 
-import java.util.IntSummaryStatistics;
 
 public class CalculoImpostos {
 
 
-    private double iss = 0.01;
-    private double iof = 0.02;
-    private double ir = 0.5;
+    private double iss = 0.02;
+    private double iof = 0.0038;
+    private double ir = 0.075;
 
     public double calc_iss(double valor_iss){
         double calcIss = iss * valor_iss;
