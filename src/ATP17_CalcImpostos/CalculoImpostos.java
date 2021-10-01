@@ -9,13 +9,19 @@ public class CalculoImpostos {
     private double iof = 0.02;
     private double ir = 0.5;
 
-    public void calc_iss(double valor_iss){
+    public double calc_iss(double valor_iss){
+        double calcIss = iss * valor_iss;
+        return calcIss;
 
     }
-    public void calc_iof(double valor_iof){
+    public double calc_iof(double valor_iof){
+        double calcIof = iof * valor_iof;
+        return calcIof;
 
     }
-    public void calc_ir(double valor_iss){
+    public double calc_ir(double valor_isr){
+        double calcIr = ir * valor_isr;
+        return calcIr;
 
     }
 
