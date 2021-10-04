@@ -2,11 +2,11 @@ package Aula13.ATP19.Exercicio2;
 
 public class PessoaFisica {
 
-    String nome;
-    String sobrenome;
-    String codigo;
-    String rg;
-    String cpf;
+    private String nome;
+    private String sobrenome;
+    private String codigo;
+    private String rg;
+    private String cpf;
     int idade;
 
 
