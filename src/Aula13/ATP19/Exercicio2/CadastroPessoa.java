@@ -18,6 +18,31 @@ public class CadastroPessoa {
         ps1.setRg("456.456.543");
         String rg = ps1.getRg();
 
+        PessoaFisica ps2 = new PessoaFisica();
+        ps2.setNome("Julianne");
+        String nome = ps2.getNome();
+        ps2.setSobrenome("Silva");
+        String sobrenome = ps2.getSobrenome();
+        ps2.setCodigo("dfg 123");
+        String cod = ps2.getCodigo();
+        ps2.setCpf("098.123.232");
+        String cpf = ps2.getCpf();
+        ps2.setRg("765.456.543");
+        String rg = ps2.getRg();
+
+        PessoaFisica ps3 = new PessoaFisica();
+        ps3.setNome("Suzanne");
+        String nome = ps2.getNome();
+        ps3.setSobrenome("Passos");
+        String sobrenome = ps2.getSobrenome();
+        ps3.setCodigo("ppf 123");
+        String cod = ps2.getCodigo();
+        ps3.setCpf("432.123.232");
+        String cpf = ps2.getCpf();
+        ps3.setRg("654.456.543");
+        String rg = ps2.getRg();
+
+        }
 
     }
 }
