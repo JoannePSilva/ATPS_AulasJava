@@ -4,7 +4,7 @@ public class ContaCorrente {
 
 
     private int agencia;
-    private long num_conta;
+    private String num_conta;
     private String codigo_cliente;
     private double saldo;
 
@@ -17,11 +17,11 @@ public class ContaCorrente {
         this.agencia = agencia;
     }
 
-    public long getNum_conta() {
+    public String getNum_conta() {
         return num_conta;
     }
 
-    public void setNum_conta(long num_conta) {
+    public void setNum_conta(String num_conta) {
         this.num_conta = num_conta;
     }
 

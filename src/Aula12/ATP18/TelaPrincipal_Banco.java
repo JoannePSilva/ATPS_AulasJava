@@ -9,13 +9,19 @@ public class TelaPrincipal_Banco {
         cc.setAgencia(1232);
         int ag = cc.getAgencia();
 
-        cc.setNum_conta(123232987);
-        long cc1 = cc.getNum_conta();
+        cc.setNum_conta("123232987");
+        String cc1 = cc.getNum_conta();
+
+        cc.setSaldo(12.345);
+        double saldo = cc.getSaldo();
+
 
         cc.setCodigo_cliente("CDE987");
         String cod_cliente = cc.getCodigo_cliente();
 
-        cc.setSaldo(12.345);
-        double saldo = cc.getSaldo();
+
+        System.out.println("==========EXTRATO=============");
+        System.out.printf(" Agência: %d | Conta: %s \n Saldo: %.2f \n Código do Cliente: %s", ag, cc1, saldo, cod_cliente);
+
     }
 }
