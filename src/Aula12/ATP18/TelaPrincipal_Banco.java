@@ -21,7 +21,7 @@ public class TelaPrincipal_Banco {
 
 
         System.out.println("==========EXTRATO=============");
-        System.out.printf(" Agência: %d | Conta: %s \n Saldo: %.2f \n Código do Cliente: %s", ag, cc1, saldo, cod_cliente);
+        System.out.printf(" Agência: %d | Conta: %s \n Saldo: %.3f \n Código do Cliente: %s", ag, cc1, saldo, cod_cliente);
 
     }
 }
