@@ -1,34 +1,23 @@
 package Aula14.ATP20;
 
-public class Funcionario {
+public class Funcionario extends Pessoa {
 
-    private String curso;
-    private String coordenador;
-    private String bonus;
+    private double salario;
+    private String departamento;
 
-
-    public String getCurso() {
-        return curso;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
-    public String getCoordenador() {
-        return coordenador;
+    public String getDepartamento() {
+        return departamento;
     }
 
-    public void setCoordenador(String coordenador) {
-        this.coordenador = coordenador;
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
     }
-
-    public String getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(String bonus) {
-        this.bonus = bonus;
-    }
-
 }
