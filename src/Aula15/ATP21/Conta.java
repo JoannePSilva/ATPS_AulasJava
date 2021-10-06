@@ -2,6 +2,7 @@ package Aula15.ATP21;
 
 public class Conta {
 
+    private String client_code;
     private double balance;
 
     public double getBalance() {
@@ -20,7 +21,9 @@ public class Conta {
         this.client_code = client_code;
     }
 
-    private String client_code;
-
+        double transfer(double value){
+        double transfer_rate = balance - value;
+        return transfer_rate;
+    }
 
 }

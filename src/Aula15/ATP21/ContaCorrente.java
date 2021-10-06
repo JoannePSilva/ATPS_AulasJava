@@ -1,6 +1,6 @@
 package Aula15.ATP21;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta{
 
     private double transfer_rate = 10.50;
     private double taxa_manutencao = 2.50;
