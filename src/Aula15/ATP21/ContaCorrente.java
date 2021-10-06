@@ -13,9 +13,9 @@ public class ContaCorrente extends Conta{
         this.setBalance(saldoAtual);
 
         numbers_transfer++;
-                if(numbers_transfer %5 ==0){
-                    saldoAtual = this.getBalance() - taxa_manutencao;
-                    this.setBalance(saldoAtual);
-                }
+        if(numbers_transfer %5 ==0){
+            saldoAtual = this.getBalance() - taxa_manutencao;
+            this.setBalance(saldoAtual);
+        }
     }
 }
