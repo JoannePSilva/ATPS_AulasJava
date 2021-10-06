@@ -21,9 +21,9 @@ public class Conta {
         this.client_code = client_code;
     }
 
-        double transfer(double value){
-        double transfer_rate = balance - value;
-        return transfer_rate;
+    public void transfer(double value) {
+        this.balance -= value;
+
     }
 
 }

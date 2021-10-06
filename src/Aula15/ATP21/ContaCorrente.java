@@ -6,30 +6,16 @@ public class ContaCorrente extends Conta{
     private double taxa_manutencao = 2.50;
     private int numbers_transfer = 0;
 
+    @Override
+    public void transfer(double value) {
+        super.transfer(value);
+        double saldoAtual = this.getBalance() - transfer_rate;
+        this.setBalance(saldoAtual);
 
-    public double getTransfer_rate() {
-        return transfer_rate;
+        numbers_transfer++;
+                if(numbers_transfer %5 ==0){
+                    saldoAtual = this.getBalance() - taxa_manutencao;
+                    this.setBalance(saldoAtual);
+                }
     }
-
-    public void setTransfer_rate(double transfer_rate) {
-        this.transfer_rate = transfer_rate;
-    }
-
-    public double getTaxa_manutencao() {
-        return taxa_manutencao;
-    }
-
-    public void setTaxa_manutencao(double taxa_manutencao) {
-        this.taxa_manutencao = taxa_manutencao;
-    }
-
-    public int getNumbers_transfer() {
-        return numbers_transfer;
-    }
-
-    public void setNumbers_transfer(int numbers_transfer) {
-        this.numbers_transfer = numbers_transfer;
-    }
-
-
 }
