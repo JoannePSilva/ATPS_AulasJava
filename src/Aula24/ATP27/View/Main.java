@@ -31,7 +31,11 @@ public class Main {
         filmeController.create(filme);
         seriesController.create(serie);
 
+    boolean str = filmeController.contains(filme);
+        System.out.println(str);
 
+        seriesController.delete(serie);
+        System.out.println(filme);
 
 
 
