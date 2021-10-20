@@ -1,4 +1,4 @@
-package Aula16.ATP22.Exercicio1;
+package Aula16.ATP22;
 
 public class Aluno {
 
@@ -7,28 +7,28 @@ public class Aluno {
     private int idade;
     private String matricula;
 
+
+
     @Override
     public String toString() {
-        return "Aluno:" + nome +' '+ sobrenome + '\n' + "Idade: " + idade + "\nMatrícula: " + matricula;
+        return super.toString();
+
+
     }
 
     public String getNome() {
-
         return nome;
     }
 
     public void setNome(String nome) {
-
         this.nome = nome;
     }
 
     public String getSobrenome() {
-
         return sobrenome;
     }
 
     public void setSobrenome(String sobrenome) {
-
         this.sobrenome = sobrenome;
     }
 
@@ -48,6 +48,8 @@ public class Aluno {
         this.matricula = matricula;
     }
 
+    public class BaseCadastroLivros {
 
 
+    }
 }

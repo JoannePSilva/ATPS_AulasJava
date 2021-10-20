@@ -1,4 +1,6 @@
-package Aula16.ATP22;
+package Aula16.ATP22.Exercicio1;
+
+import Aula16.ATP22.Exercicio1.Aluno;
 
 public class Tela {
 
@@ -7,7 +9,7 @@ public class Tela {
             Aluno a = new Aluno();
             Aluno a1 = new Aluno();
 
-            System.out.println("Cadastro de alunos");
+            System.out.println("= = = = Cadastro de alunos = = = = ");
             a.setNome("Joanne");
             a.setSobrenome("Silva");
             a.setIdade(34);

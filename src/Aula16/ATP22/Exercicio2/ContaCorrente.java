@@ -12,13 +12,17 @@ public class ContaCorrente {
     }
 
     public double saque(double saque){
-        this.saldo -= saque + taxa_saque;
+        this.saldo -= saque + this.taxa_saque;
         return this.saldo;
     }
 
-    public double deposito(double valor) {
-        double deposito = this.saldo + valor;
-        return deposito;
+    public void deposito(double valor) {
+        this.saldo+=  valor;
+    }
+
+    @Override
+    public String toString() {
+        return "Saldo:" + saldo + "| Taxa_saque: " + taxa_saque + "| Código_cliente: " + codigo_cliente;
     }
 
 }

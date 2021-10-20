@@ -20,8 +20,8 @@ public class Products {
         System.out.println("=========== Cadastro realizado com sucesso! ============");
         System.out.printf("Produto cadastrado:  %s, \n cor: %s \n tamanho: %s \n preço: %f\n",produto, cor, tam, preco);
         System.out.println("Deseja continuar cadastrando?");
-    }
 
+    }
 
     }
 

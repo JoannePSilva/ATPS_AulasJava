@@ -1,2 +1,4 @@
-package Aula17.ATP23.View;public class LivroView {
+package Aula17.ATP23.View;
+
+public class LivroView {
 }

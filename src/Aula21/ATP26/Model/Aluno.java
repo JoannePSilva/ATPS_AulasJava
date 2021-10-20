@@ -1,4 +1,4 @@
-package Aula20.ATP26;
+package Aula21.ATP26.Model;
 
 public class Aluno extends Pessoa {
     public long matricula;
