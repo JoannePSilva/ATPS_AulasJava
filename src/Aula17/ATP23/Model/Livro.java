@@ -42,12 +42,14 @@ public class Livro {
 
     @Override
     public boolean equals(Object o) {
-        Livro outro_livro = (Livro) o;
-        if (this.id == outro_livro.id) {
-            return true;
-        } else {
-            return false;
-        }
+        if (this == o) return true;
+        if (!(o instanceof Livro)) return false;
+
+        Livro livro = (Livro) o;
+
+        return getId() == livro.getId();
     }
+
 }
+
 

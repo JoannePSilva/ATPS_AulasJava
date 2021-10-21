@@ -3,8 +3,11 @@ import Aula17.ATP23.Model.Livro;
 import java.util.ArrayList;
 
 public class LivroController {
-    private ArrayList<Livro> lista_livros = new ArrayList<>();
+    private ArrayList<Livro> lista_livros;
 
+    public LivroController() {
+        this.lista_livros = new ArrayList<Livro>();
+    }
 
 //create read update delete
 
@@ -17,19 +20,17 @@ public class LivroController {
         return this.lista_livros;
     }
 
-    public void delete(Livro item) {
-        this.lista_livros.remove(item);
-
-    }
-
     public void update(Livro item) {
-
         for (int i = 0; i < lista_livros.size(); i++) {
             Livro bcl = this.lista_livros.get(i);
 
             if (bcl.getId() == item.getId()) {
+    }
 
-            }
+   /* public void delete(Livro item){
+        this.lista_livros.remove(item);
+    }*/
+
 
         }
 
