@@ -9,4 +9,13 @@ public class Endereco extends Base {
     public String rua;
     public String complemento;
     public int numero;
+
+    @Override
+    public String toString() {
+        return "Estado: " + estado +
+                "| Cidade: " + cidade+
+                "| Rua: " + rua +
+                "| Complemento: " + complemento +
+                "| Número: " + numero;
+    }
 }
