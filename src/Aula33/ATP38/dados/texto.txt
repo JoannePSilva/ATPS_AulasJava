@@ -1,0 +1,29 @@
+ ----- criamos um doc txt na raiz ------
+Chamado: pratos.txt
+Para leitura de um fluxo/ ARQUIVO
+
+ FileInputStream fis = new FileInputStream(“pratos.txt”)
+•	Vem direto com uma exceção, caso não exista o arquivo.
+Para tratar:
+Try | catch
+Try{
+FileInputStream fis = new FileInputStream(“pratos.txt”)
+Sout(“aberto com sucesso”)
+} catch (FileNotFoundException e)
+Sout(“arquivo não encontrado”)
+
+Após, para ler o arquivo
+Try{
+FileInputStream fis = new FileInputStream(“pratos.txt”)
+Sout(fis.read())  também traz uma exception
+} catch (FileNotFoundException e)
+Sout(“arquivo não encontrado”)
+} catch (IOException e)
+Sout(“Não foi possível ler”)
+InputStreamReader isr = new InputStreamReader(fis)
+BufferedReader  BufferedReader  br = new BufferedReader (isr) (readLine) traz a linha inteira
+Para ler o texto é preciso de um laço
+While(br.ready()){
+String linha = br.readLine();
+Sout(linha)
+}br.close
