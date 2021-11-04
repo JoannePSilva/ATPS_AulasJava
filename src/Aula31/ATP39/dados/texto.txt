@@ -1,0 +1,31 @@
+------------Escrever
+PrintWriter ps = null; - é preciso inicializar
+Try{
+ps = new PrintWriter (“P3/dados/molhos.txt”, true); 
+Ps.write (“Sugo”);
+Ps. write (“Branco”);
+Ps. write (“Bolonhesa”);
+Ps.close;
+}catch (FileNotFoundException e){
+Sout(“Não foi possível encontrar o arquivo”)
+} finally{
+ps.close
+}
+
+------Ou
+FileWriter ps = null; Try{
+ps = new PrintWriter (“P3/dados/molhos.txt”, true); 
+Ps.write (“Sugo”);
+Ps. write (“Branco”);
+Ps. write (“Bolonhesa”);
+ps.close
+
+}catch (FileNotFoundException e){
+Sout(“Não foi possível encontrar o arquivo”)
+}catch (IOException e)
+Sout (“Não foi possível escrever o arquivo”)
+-----------------------------------------------------------------------Leitura
+Usar o Scanner passando como parâmetro new File
+Scanner sc = Scanner (new File(nome/diretório/do arquivo))
+
+Para ler até o final  while (sc.hasNetxLine()) **enquanto houver linha

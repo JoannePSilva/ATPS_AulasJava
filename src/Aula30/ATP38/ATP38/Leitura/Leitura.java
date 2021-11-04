@@ -1,5 +1,4 @@
-package Aula33.ATP38.Leitura;
-
+package Aula30.ATP38.ATP38.Leitura;
 
 import java.io.*;
 
@@ -8,7 +7,7 @@ public class Leitura {
 
 
         try {
-            FileInputStream fis = new FileInputStream("src/Aula33/ATP38/dados/texto.txt");
+            FileInputStream fis = new FileInputStream("src/Aula30/ATP38/dados/texto.txt");
             System.out.println("Aberto com sucesso");
             InputStreamReader isr = new InputStreamReader(fis);
             BufferedReader br = new BufferedReader(isr);
