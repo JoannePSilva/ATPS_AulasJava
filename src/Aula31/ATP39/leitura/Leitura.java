@@ -8,6 +8,7 @@ public class Leitura {
 
         try {
             Scanner scanner = new Scanner(new File("src/Aula31/ATP39/dados/texto.txt"));
+
             while (scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
             }
