@@ -11,7 +11,7 @@ import java.sql.Statement;
 public class View1 {
     public static void main(String[] args) {
         try {
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/postgres", "postgres", "123456");
+            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "2609");
 
             Statement statement = conn.createStatement();
             String sql = "insert into categoria(nome, descricao)values('frios', 'alimentos sob baixa temperatura')";
