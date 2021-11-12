@@ -1,5 +1,5 @@
 package Aula36.ATP48.Views;
-
+//Receber o id da categoria a ser deletada através da variável
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

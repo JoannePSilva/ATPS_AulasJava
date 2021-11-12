@@ -1,5 +1,5 @@
 package Aula34.ATP46.View;
-//Na classe2, insira um novo produto na tabela e imprima o id gerado.
+//Insira um novo produto na tabela e imprima o id gerado.
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class ViewInsert {
     public static void main(String[] args) {
         try {
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/postgres", "postgres", "123456");
+            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "2609");
 
             Statement statement = conn.createStatement();
             String sql = "insert into produto(nome, descricao, preco, categoria_id)values('tela', 'apple', 800, 4)";
