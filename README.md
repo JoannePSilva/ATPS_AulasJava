@@ -11,7 +11,7 @@ ATP5 - Estruturas de decisão | Estruturas de repetição -- Trabalho em dupla <
 ATP6 - ESTRUTURA DE REPETIÇÃO FOR<br>
 ATP7 - Criação de menu | Switch case | Cálculos -- Trabalho em dupla <br>
 ATP8 - MÉTODOS <br>
-ATP9 -<br>
+ATP9 - Switch-case - Atividade em dupla<br>
 ATP10 -REVISÃO <br>
 ATP11- REVISÃO <br>
 ATP12 -<br>
@@ -27,31 +27,21 @@ ATP21-POO - Sobrescrita<br>
 ATP22- POO - Construtor, sobrecarga<br>
 ATP23 -POO - MVC | CRUD <br>
 ATP24-POO - Object <br>
-ATP25 - POO - ToString<br>
-ATP26 - <br>
-ATP27 -<br>
-ATP28 -<br>
-ATP29 -<br>
-ATP30 -<br>
-ATP31-<br>
-ATP32-<br>
-ATP33-<br>
-ATP34-<br>
-ATP35-<br>
-ATP36 -<br>
-ATP37-<br>
-ATP38 -<br>
-ATP39 -<br>
-ATP40 -<br>
-ATP41-<br>
-ATP42-<br>
-ATP43-<br>
-ATP44-<br>
-ATP45-<br>
-ATP46-<br>
-ATP47-<br>
-ATP48-<br>
-ATP49 -<br>
-ATP50-<br>
-ATP51 -<br>
-ATP52 -<br>
+ATP25 - POO - toString<br>
+ATP26 - POO - Equals e toString<br>
+ATP27 - 	MVC e Generics<br>
+ATP28 - MVC, Generics e Composição<br>
+ATP29 - Herança e Composição<br>
+ATP30 - Tratamento de exceções <br>
+ATP31- Revisão de herança, composição, sobrescrita, construtores e generics<br>
+ATP32 | ATP33 |ATP34 | ATP35- | ATP36 - HTML, CSS, JAVASCRIPT<br>
+ATP37- Revisão JAVA <br>
+ATP38 | ATP39 - Java.io, leitura e escrita de arquivos<br>
+ATP40 - DAO - INTERFACE <br>
+ATP41 | ATP42 | ATP43 | ATP44 | ATP45- BAMCO DE DADOS <br>
+ATP46 | ATP47- JDBC - BIBLIOTECA<br>
+ATP48- JDBC - PreparedStatment<br>
+ATP49 - Design Pattern Factory<br>
+ATP50- Pool de Conexões<br>
+ATP51 - JDBC - DAO<br>
+ATP52 - MAVEN <br>
