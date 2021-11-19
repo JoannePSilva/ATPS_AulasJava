@@ -1,4 +1,4 @@
-package model;
+package aula37.model;
 
 public class Categoria {
     private int id;

@@ -1,4 +1,4 @@
-package view;
+package aula37.view;
 
 import javax.swing.JFrame;
 

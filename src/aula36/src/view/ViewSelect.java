@@ -1,12 +1,12 @@
-package src.view;
+package aula36.src.view;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import src.dao.CategoriaDao;
-import src.dao.ConnectionFactory;
-import src.model.Categoria;
+import aula36.src.dao.CategoriaDao;
+import aula36.src.dao.ConnectionFactory;
+import aula36.src.model.Categoria;
 
 public class ViewSelect {
     public static void main(String[] args) {

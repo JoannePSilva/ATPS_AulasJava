@@ -1,4 +1,4 @@
-package dao;
+package aula37.dao;
 
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import model.Categoria;
-import utils.ConnectionFactory;
+import aula37.model.Categoria;
+import aula37.utils.ConnectionFactory;
 
 public class CategoriaDao {
     public int insert(Categoria model){

@@ -1,4 +1,4 @@
-package Aula35_to.ATP48.Views;
+package Aula35_to.ATP50.Views;
 //Receber parâmetros - nome e descrição através de variáveis e troca do Statement para preparedStatemente
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -31,7 +31,6 @@ public class View1 {
 
             conn.close();
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

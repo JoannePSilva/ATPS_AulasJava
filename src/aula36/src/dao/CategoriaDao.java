@@ -1,4 +1,4 @@
-package src.dao;
+package aula36.src.dao;
 
 import java.sql.Statement;
 import java.sql.Connection;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import src.model.Categoria;
+import aula36.src.model.Categoria;
 
 public class CategoriaDao {
     private Connection conn;

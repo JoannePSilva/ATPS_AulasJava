@@ -1,5 +1,5 @@
-package Aula35_to.ATP48.Views;
-//Altere a classe usada na 47 para prepareStatement
+package Aula35_to.ATP50.Views;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -26,7 +26,6 @@ public class View{
 
             conn.close(); //fechar conexão
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

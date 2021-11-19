@@ -1,4 +1,4 @@
-package Aula36.ATP49.Views;
+package Aula35_to.ATP49.Views;
 //Recebendo os nomes das categorias a serem alteradas através de variáveis e troca do statement para PreparedStatement
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,13 +7,16 @@ import java.sql.SQLException;
 
 public class View2 {
     public static void main(String[] args) {
-        try {
-            String nome = "livros";
-            int id1 = 1;
-            int id2 = 2;
+        try (Connection conn = new ConnectionFactory().getConnection()){
 
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "2609");
-            PreparedStatement prepStatement = conn.prepareStatement("update categoria SET nome  = ? where id = ? or id = ?");
+            String nome = "UpdatePrepStatement";
+            int id1 = 1;
+
+        
+           
+            String sql = "UPDATE categoria SET nome  = ? where id = ? or id = ?";
+            
+            PreparedStatement prepStatement = conn.prepareStatement();
             prepStatement.setString(1, nome);
             prepStatement.setInt(2, id1);
             prepStatement.setInt(3, id2);

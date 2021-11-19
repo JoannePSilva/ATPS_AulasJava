@@ -1,7 +1,7 @@
-package view;
+package aula37.view;
 
-import dao.CategoriaDao;
-import model.Categoria;
+import aula37.dao.CategoriaDao;
+import aula37.model.Categoria;
 
 public class ViewRead {
     public static void main(String[] args) {

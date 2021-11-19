@@ -1,4 +1,4 @@
-package src.model;
+package aula36.src.model;
 
 public class Categoria {
     private int id;

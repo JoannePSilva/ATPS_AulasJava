@@ -1,9 +1,9 @@
-package view;
+package aula37.view;
 
 import java.util.Scanner;
 
-import dao.CategoriaDao;
-import model.Categoria;
+import aula37.dao.CategoriaDao;
+import aula37.model.Categoria;
 
 public class ViewDelete{
     public static void main(String[] args) {

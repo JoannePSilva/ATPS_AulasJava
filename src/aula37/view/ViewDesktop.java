@@ -1,4 +1,4 @@
-package view;
+package aula37.view;
 
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -12,8 +12,8 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import dao.CategoriaDao;
-import model.Categoria;
+import aula37.dao.CategoriaDao;
+import aula37.model.Categoria;
 
 public class ViewDesktop extends JFrame {
     private CategoriaDao dao;
