@@ -1,0 +1,8 @@
+com\joanne\atp_aula\dao\ConnectionFactory.class
+com\joanne\atp_aula\servlets\CategoriaReadServlet.class
+com\joanne\atp_aula\models\Categoria.class
+com\joanne\atp_aula\models\Produto.class
+com\joanne\atp_aula\servlets\ProdutoServlet$Categoria.class
+com\joanne\atp_aula\dao\CategoriaDao.class
+com\joanne\atp_aula\servlets\CategoriaServlet.class
+com\joanne\atp_aula\servlets\ProdutoServlet.class

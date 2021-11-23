@@ -1,7 +1,5 @@
 package com.joanne.atp_aula.models;
 
-import javax.xml.validation.Validator;
-
 public class Produto {
     
     private String nome;

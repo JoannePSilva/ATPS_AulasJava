@@ -1,8 +1,17 @@
 package com.joanne.atp_aula.models;
 
 public class Categoria {
+    private int id;
     private String nome;
     private String descricao;
+
+    
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
    
     public String getNome() {
         return nome;

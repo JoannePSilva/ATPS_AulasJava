@@ -11,7 +11,7 @@
     <h1>Cadastro de produtos</h1>
     nome:<input type= "text" name="nome" id="nome">
     valor:<input type= "number" name="nome" id="nome">
-    id:<input type= "number" name="id_categoria" id="id_categoria">
+    id:<input type= "number" name="produto" id="id_categoria">
     <input type ="submit" value="salvar">
     </form>
 

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import com.joanne.atp_aula.models.Categoria;
+import com.joanne.atp_aula.dao.CategoriaDao;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -18,14 +19,16 @@ public class CategoriaServlet extends HttpServlet{
     
     @Override //req = requisição - solicitação do usuário
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      Categoria categoria = new Categoria();
+      CategoriaDao dao = new CategoriaDao();
+      Categoria model = new Categoria();
 
-      categoria.setNome (req.getParameter("nome"));
-      categoria.setDescricao(req.getParameter("nome"));
+      model.setNome (req.getParameter("nome"));
+      model.setDescricao(req.getParameter("nome"));
+      model.setId(dao.insert(model));
      
 
         //response - resposta do servidor ao cliente
         PrintWriter out = resp.getWriter();
-        out.printf(" Categoria  -- Categoria Model = %s, %s", categoria.getNome(), categoria.getDescricao());
-    }
+        out.printf("Categoria Salva com sucesso! \n Id gerado %d", model.getId());
+}
 }
