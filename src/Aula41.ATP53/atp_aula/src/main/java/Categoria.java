@@ -1,3 +1,5 @@
+
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -17,6 +19,6 @@ public class Categoria extends HttpServlet{
 
         //response - resposta do servidor ao cliente
         PrintWriter out = resp.getWriter();
-        out.println("Servlet Categoria");
+        out.println("ATP53 - Utilizando Servlet - Categoria");
     }
 }

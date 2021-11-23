@@ -4,6 +4,8 @@ package com.joanne.atp_aula.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import com.joanne.atp_aula.models.Categoria;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -16,10 +18,14 @@ public class CategoriaServlet extends HttpServlet{
     
     @Override //req = requisição - solicitação do usuário
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      String nome = req.getParameter("nome");
+      Categoria categoria = new Categoria();
+
+      categoria.setNome (req.getParameter("nome"));
+      categoria.setDescricao(req.getParameter("nome"));
+     
 
         //response - resposta do servidor ao cliente
         PrintWriter out = resp.getWriter();
-        out.printf(" Categoria  -- Nome = %s", nome);
+        out.printf(" Categoria  -- Categoria Model = %s, %s", categoria.getNome(), categoria.getDescricao());
     }
 }
