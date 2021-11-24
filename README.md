@@ -12,11 +12,7 @@ ATP6 - ESTRUTURA DE REPETIÇÃO FOR<br>
 ATP7 - Criação de menu | Switch case | Cálculos -- Trabalho em dupla <br>
 ATP8 - MÉTODOS <br>
 ATP9 - Switch-case - Atividade em dupla<br>
-ATP10 -REVISÃO <br>
-ATP11- REVISÃO <br>
-ATP12 - REVISÃO<br>
-ATP13 - REVISÃO <br>
-ATP14 -REVISÃO <br>
+ATP10 -REVISÃO | ATP11- REVISÃO | ATP12 - REVISÃO | ATP13 - REVISÃO | ATP14 -REVISÃO <br>
 ATP15 -Programação orientada a objetos na linguagem Java <br>
 ATP16-POO com impressão <br>
 ATP17- POO - Chamada de métodos <br>
