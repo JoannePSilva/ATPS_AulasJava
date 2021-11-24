@@ -23,12 +23,13 @@ public class CategoriaServlet extends HttpServlet{
       Categoria model = new Categoria();
 
       model.setNome (req.getParameter("nome"));
-      model.setDescricao(req.getParameter("nome"));
-      model.setId(dao.insert(model));
+      model.setDescricao(req.getParameter("descricao"));
+      int id = dao.insert(model);
+      model.setId(id);
      
 
         //response - resposta do servidor ao cliente
         PrintWriter out = resp.getWriter();
-        out.printf("Categoria Salva com sucesso! \n Id gerado %d", model.getId());
+        out.printf("Categoria Salva com sucesso!\n Id gerado %d", model.getId());
 }
 }
