@@ -15,7 +15,7 @@
 	<name>aula_spring</name>
 	<description>SPRING - MVC - ATP64</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>16</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

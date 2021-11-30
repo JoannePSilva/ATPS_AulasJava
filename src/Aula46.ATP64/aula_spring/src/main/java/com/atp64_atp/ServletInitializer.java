@@ -1,4 +1,4 @@
-package com.atp64_atp.aula_spring;
+package com.atp64_atp;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

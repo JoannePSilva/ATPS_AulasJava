@@ -2,8 +2,6 @@ package com.atp64_atp.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import com.atp64_atp.model.Cliente;
 import com.atp64_atp.repository.ClienteRepository;
 
@@ -23,32 +21,35 @@ public ClienteController(ClienteRepository repository){
 }
 
 //mapear/encontrar o caminho
-@GetMapping("/cliente")
-public String filmes(Model req){
-    List<Cliente> listaFilmes = (List<Cliente>)repository.findAll();
-    req.addAttribute("filmes", listaFilmes);
-    return "filmes";
+@GetMapping("/cadastro")
+public String cadastro(Model req){
+    List<Cliente> listaClientes = (List<Cliente>)repository.findAll();
+    System.out.println("cadastrou");
+    req.addAttribute("cliente", listaClientes);
+    return "cadastro";
 }
-@GetMapping("/cliente/form")
+@GetMapping("/cadastro/form")
     public String formulario(Model req){
         Cliente model = new Cliente();
-        req.addAttribute("filme", model);  return "filmes-form";
+        req.addAttribute("cliente", model);  
+        return "cadastro-form";
     }
-    @PostMapping("/cliente/salvar")
+    @PostMapping("/cadastro/salvar")
         public String salvar(Cliente model){
             repository.save(model);
-            return "redirect:/filme";
+            return "redirect:/cadastro";
         }  
      
 
-    @GetMapping("/cliente/deletar/{id}")
+    @GetMapping("/cadastro/deletar/{id}")
     public String deletar(@PathVariable int id){
         repository.deleteById(id);
-        return "redirect:/cliente";
+        return "redirect:/cadastro";
     }
 
-    @GetMapping("/cliente/editar/{id}")
+    @GetMapping("/cadastro/editar/{id}")
     public String editar(@PathVariable int id, Model req){
+        System.out.println("editou");
         Cliente model = repository.findById(id).get();
         req.addAttribute("cliente", model);
         return "cadastro-form";
