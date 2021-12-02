@@ -14,15 +14,21 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = "/categoria/listar")
 public class CategoriaReadServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        CategoriaDao dao =  new CategoriaDao();
+      ArrayList<Categoria> categorias;
+      CategoriaDao dao =  new CategoriaDao();
+      String nome = req.getParameter("nome");
         
-        ArrayList<Categoria> categorias = dao.read();
-        req.setAttribute("categoria", categorias);
-        //for (Categoria model : dao.read()) {
-          //  out.printf("%d - %s \n", model.getId(), model.getNome());
-
+         if(nome != null && nome != ""){
+            categorias = dao.read();
+         } 
+         else{
+           categorias = dao.read();
+         }
+        
+          req.setAttribute("categorias", categorias);
           RequestDispatcher rd = req.getRequestDispatcher("/categoria-lista.jsp");
           rd.forward(req, resp);
         }

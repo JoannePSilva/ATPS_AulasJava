@@ -1,0 +1,9 @@
+<body>
+    <h1>Cadastro de filmes</h1>
+    <form action="http://localhost:8090/filme/salvar" method="post">
+        Nome: <input type="text" name="nome" id="nome" th:value="${filme.nome}"> <br>
+        Nome diretor: <input type="text" name="nomeDiretor" id="nomeDiretor" th:value="${filme.nomeDiretor}"> <br>
+        Gênero: <input type="text" name="genero" id="genero" th:value="${filme.genero}"> <br>
+        <input type="submit" value="Salvar">
+    </form>
+    <br />
