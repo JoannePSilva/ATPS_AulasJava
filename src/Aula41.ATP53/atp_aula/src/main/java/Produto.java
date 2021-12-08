@@ -10,9 +10,9 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class Produto {
-@WebServlet(urlPatterns = "/produto")
-public class Categoria extends HttpServlet{
+
+@WebServlet(urlPatterns ="/produto")
+public class Produto extends HttpServlet{
     
     @Override //req = requisição - solicitação do usuário
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -22,6 +22,4 @@ public class Categoria extends HttpServlet{
         PrintWriter out = resp.getWriter();
         out.println("ATP53 - Utilizando Servlet - Produto");
     }
-}
-    
 }
